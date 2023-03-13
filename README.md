@@ -1,5 +1,5 @@
 # Laravel-record-log
-this package used for record log
+### This package used for record admin log
 
 ---
 
@@ -8,7 +8,7 @@ this package used for record log
 #### 1. Install the package via composer
 
 ```shell
-composer require ppcsite/record-log
+composer require ppcsite/record_log
 ```
 
 #### 2. Publish migration
