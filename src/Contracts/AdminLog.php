@@ -15,7 +15,7 @@ interface AdminLog
      * @param $comment
      * @return void
      */
-    public static function Log(string $function_name, $action, Model $data_model=null, $comment=null): void;
+    public static function Log(string $function_name, string $action, Model $data_model=null, string $comment=null): void;
 
     /**
      * 取得變更資料之 model 關聯

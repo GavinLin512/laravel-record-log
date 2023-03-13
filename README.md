@@ -24,9 +24,16 @@ php artisan migrate
 ```
 
 ### 4. Usage
-```php
-// After create a log model, extends \Ppcsite\RecordLog\Models\AdminLog
 
+```php
+AdminLog::Log(string $function_name, string $action, Model $data_model=null, string $comment=null)
+```
+
+#### Example
+
+> After create a log model, extends \Ppcsite\RecordLog\Models\AdminLog
+
+```php
 <?php
 
 namespace App\Models\Admin;
@@ -44,8 +51,12 @@ class AdminLog extends \Ppcsite\RecordLog\Models\AdminLog
     const LOGIN_HOME = '系統管理-登入首頁';
     const REGISTER_ACCOUNT = '系統管理-註冊帳號';
 }
+```
 
-// Use log function from model
+> Use log function from model in controller
+
+```php
+use App\Models\Admin\AdminLog;
 
 protected function create(array $data)
 {

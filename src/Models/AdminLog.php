@@ -31,7 +31,7 @@ class AdminLog extends Model implements \Ppcsite\RecordLog\Contracts\AdminLog
         return $this->morphTo();
     }
 
-    public static function Log(string $function_name, $action, Model $data_model=null, $comment=null): void
+    public static function Log(string $function_name, string $action, Model $data_model=null, string $comment=null): void
     {
         $ip = Request::ip();
 
