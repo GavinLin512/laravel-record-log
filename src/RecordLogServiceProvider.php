@@ -18,9 +18,9 @@ class RecordLogServiceProvider extends ServiceProvider
             return new \Ppcsite\RecordLog\Models\AdminLog();
         });
         // 合併使用者與系統預設 config 設定檔，讓使用者可以合併覆寫 config 設定檔
-        $this->mergeConfigFrom(
-            __DIR__.'/../config/record-log.php', 'record-log'
-        );
+//        $this->mergeConfigFrom(
+//            __DIR__.'/../config/record-log.php', 'record-log'
+//        );
     }
 
     /**
